@@ -15,19 +15,23 @@ html {
 
 /* Styling Variables */
 :root {
-  --accent-color: #8CA16A;
+  --link-color: #8CA16A;
   --body-typeface: 'Gotu', sans-serif;
   --main-heading: 'Gotu', sans-serif;
+  --background-color: #FDFBF7;
+  --body-text: #313D3B;
+  --project-headings: #313D3B;
+  --hover-color: #CCAE3D;
 }
 
 
 body {
   font-family: var(--body-typeface);
-  color: #CCAE3D;
   line-height: 2;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--background-color);
 }
 
 
@@ -39,28 +43,28 @@ img {
 }
 
 
-/* Typography */
+/* Mobile and Global Typography */
 
 h1 {
-  font-size: 3em;
+  font-size: 2.175em;
   font-family: var(--main-heading);
-  line-height: normal;
+  line-height: 1.2em;
   margin-bottom: .5em;
 }
 
 
 .hero-headline {
-  color: #313D3B;
+  color: var(--project-headings);
 }
 
 /* Hyperlink Styles */
 a {
   text-decoration: none;
-  color: #8CA16A;
+  color: var(--link-color)
 }
 
 a:hover {
-  color: #CCAE3D;
+  color: var(--hover-color);
 }
 
 p {
@@ -84,19 +88,16 @@ p {
 /* Defining the work page grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 1rem;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width. Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
 
-.hero-footer {
-  color: #FDFBF7;
-}
+.hero-footer {}
 
 .main-footer {
-  max-height: 100em;
-  background: #FDFBF7;
+  min-height: 50vh;
 }
 
 .main-footer {
@@ -155,28 +156,6 @@ p {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-size: 600%;
-  background: #FDFBF7;
-  animation: bg-animation 120s infinite alternate;
-}
-
-
-
-
-
-
-
-
-
-
-@keyframes bg-animation {
-  0% {
-    background-position: 0%;
-  }
-
-  100% {
-    background-position: 100%;
-  }
 }
 
 
@@ -195,18 +174,14 @@ p {
 
 .project-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  background: #FDFBF7;
   padding: 1em;
 }
 
 .project-aside {
-  width: 30vw;
-  height: 40vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 5vh;
-  color: #313D3B;
+  width: 100%;
+  color: var(--body-text);
   padding: 1em;
 }
 
@@ -220,7 +195,72 @@ p {
 }
 
 .project-details {
-  width: 70vw;
-  min-height: 800vh;
+  width: 100%;
   padding: 1em;
+}
+
+
+
+
+
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body {
+    background: rgb(153, 212, 244);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  h1 {
+    font-size: 3em;
+  }
+
+
+
+  body {
+    background: rgb(244, 203, 153);
+  }
+
+  .project-wrapper {
+    flex-direction: row;
+  }
+
+  .project-aside {
+    width: 30vw;
+    height: 40vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5vh;
+
+
+  }
+
+  .project-details {
+    width: 70vw;
+
+  }
+
+
+
+
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    background: rgb(232, 244, 153);
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  body {
+    background: rgb(245, 235, 240);
+  }
 }
