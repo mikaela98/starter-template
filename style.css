@@ -125,6 +125,26 @@ p {
   align-items: center;
 }
 
+.navigation-item {
+  /* padding: 1em 3em 0em 3em; */
+  width: 15em;
+}
+
+.navigation-link:hover {
+  background: url(hyperlink-wave.svg);
+  z-index: -10;
+}
+
+.branding-sub-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding: 1em 3em 0em 3em; */
+  align-items: center;
+}
+
+
+
 .logo {
   width: 3em;
 }
