@@ -40,6 +40,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: top
 }
 
 
@@ -78,18 +79,19 @@ p {
 
 .work-wrapper {
   flex: 1;
+  width: 100%;
   /* Take up the remaining space available */
 }
 
 .portfolio {
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
-/* Defining the work page grid */
+/* Defining the work page grid for mobile and global */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-gap: 1rem; */
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width. Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
@@ -97,7 +99,7 @@ p {
 .hero-footer {}
 
 .main-footer {
-  min-height: 5 0vh;
+  min-height: 50vh;
 }
 
 .main-footer {
@@ -121,13 +123,17 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1em 3em 0em 3em;
+  padding: 1em 2em 0em 2em;
   align-items: center;
+
 }
 
 .navigation-item {
-  /* padding: 1em 3em 0em 3em; */
-  width: 15em;
+  width: 7em;
+}
+
+.navigation-link {
+  font-size: .6rem;
 }
 
 .navigation-link:hover {
@@ -173,9 +179,11 @@ p {
 /* Hero */
 
 .hero {
-  min-height: 100vh;
+  /* min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
+  width: 100%;
+  background: rgb(244, 203, 153);
 }
 
 
@@ -184,7 +192,7 @@ p {
   flex: 1;
   align-items: center;
   justify-content: center;
-  padding: 4em 8em;
+  padding: 1em 2em;
   text-align: center;
 }
 
@@ -235,15 +243,34 @@ p {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  body {
+    background: rgb(244, 203, 153);
+  }
 
   h1 {
     font-size: 3em;
   }
 
+  .navigation-item {
+    width: 12em;
+  }
 
+  .navigation-link {
+    font-size: 1rem;
+  }
 
-  body {
-    background: rgb(244, 203, 153);
+  .hero-headline-wrapper {
+    padding: 4em 8em;
+
+  }
+
+  .branding-navigation {
+    padding: 1em 3em 0em 3em;
+  }
+
+  /* Only change the pixels below for large screens as desired */
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   }
 
   .project-wrapper {
