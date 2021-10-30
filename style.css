@@ -96,16 +96,12 @@ p {
 }
 
 
-.hero-footer {}
 
-.main-footer {
-  min-height: 50vh;
-}
 
 .main-footer {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   padding: 1em 3em 0em 3em;
   text-align: center;
 }
@@ -267,6 +263,13 @@ p {
   .branding-navigation {
     padding: 1em 3em 0em 3em;
   }
+
+  .main-footer {
+    flex-direction: row;
+  }
+
+
+
 
   /* Only change the pixels below for large screens as desired */
   .grid {
