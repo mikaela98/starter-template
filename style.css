@@ -16,11 +16,12 @@ html {
 /* Styling Variables */
 :root {
   --link-color: #8CA16A;
-  --body-typeface: 'Gotu', sans-serif;
-  --main-heading: 'Gotu', sans-serif;
+  --body-typeface: 'Nunito', sans-serif;
+  --main-heading: 'Nunito', sans-serif;
   --background-color: #FDFBF7;
-  --body-text: #313D3B;
-  --project-headings: #313D3B;
+  --header-background-color: #1C322F;
+  --body-text: #1C322F;
+  --project-headings: #1C322F;
   --hover-color: #CCAE3D;
 }
 
@@ -44,6 +45,7 @@ img {
 }
 
 
+
 /* Mobile and Global Typography */
 
 h1 {
@@ -56,12 +58,13 @@ h1 {
 
 .hero-headline {
   color: var(--project-headings);
+  background-color: var(--header-background-color)
 }
 
 /* Hyperlink Styles */
 a {
   text-decoration: none;
-  color: var(--link-color)
+  color: var(--project-headings)
 }
 
 a:hover {
@@ -156,7 +159,7 @@ p {
 
 
 .logo {
-  width: 3em;
+  width: 3.5em;
 }
 
 .hero-headline-wrapper {
@@ -187,7 +190,6 @@ p {
   display: flex;
   flex-direction: column; */
   width: 100%;
-  background: rgb(244, 203, 153);
 }
 
 
@@ -198,6 +200,7 @@ p {
   justify-content: center;
   padding: 1em 2em;
   text-align: center;
+  flex-direction: column;
 }
 
 
@@ -252,7 +255,8 @@ p {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 1.7em;
+    letter-spacing: 1.2pt;
   }
 
   .navigation-item {
