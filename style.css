@@ -181,21 +181,23 @@ p {
 }
 
 .navigation-item {
-  width: 7em;
+  /* width: 7em; */
 }
 
 .navigation-link {
   font-size: .6rem;
   padding-bottom: 1rem;
+  width: 6rem;
+  display: block;
+  text-align: center;
 }
 
 .navigation-link:hover {
   background: url(mikaela-johnson-highlight-squiggle.svg);
-  z-index: 50;
+  /* z-index: 50; */
   background-repeat: repeat-x;
-  background-position-y: 18px;
-  background-position-x: -3px;
-  background-size: 86px 5px;
+  background-position-y: 2rem;
+  /* background-size: 86px 5px; */
 }
 
 .branding-sub-navigation {
@@ -338,8 +340,12 @@ p {
   }
 
   .navigation-item {
-    width: 12em;
+    /* width: 12em; */
+
+
   }
+
+  .sub-navigation-item {}
 
   .navigation-link {
     font-size: 1rem;
