@@ -16,6 +16,7 @@ html {
 /* Styling Variables */
 :root {
   --link-color: #8CA16A;
+  --overlay-color: #CCAE3D;
   --body-typeface: 'Nunito', sans-serif;
   --main-heading: 'Nunito', sans-serif;
   --background-color: #FDFBF7;
@@ -55,6 +56,17 @@ h1 {
   margin-bottom: .5em;
 }
 
+.project-title {
+  text-transform: uppercase;
+}
+
+.project-title-overlay {
+  font-size: 1.875em;
+}
+
+.categories {
+  text-transform: uppercase;
+}
 
 .hero-headline {
   color: var(--project-headings);
@@ -98,8 +110,38 @@ p {
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width. Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
+.project {
+  position: relative;
+  /* Required to contain overlay size */
+}
 
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.75s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
 
+/* Solid Colour Overlay */
+.solid {
+  background-color: var(--overlay-color);
+}
+
+.project:hover .solid,
+.project:active .solid {
+  opacity: 0.8675;
+  color: white;
+}
 
 .main-footer {
   display: flex;
@@ -141,11 +183,16 @@ p {
 
 .navigation-link {
   font-size: .6rem;
+  padding-bottom: 1rem;
 }
 
 .navigation-link:hover {
-  background: url(hyperlink-wave.svg);
-  z-index: -10;
+  background: url(mikaela-johnson-highlight-squiggle.svg);
+  z-index: 50;
+  background-repeat: repeat-x;
+  background-position-y: 18px;
+  background-position-x: -3px;
+  background-size: 86px 5px;
 }
 
 .branding-sub-navigation {
@@ -192,6 +239,9 @@ p {
   width: 100%;
 }
 
+.hero-about {
+  flex: 1;
+}
 
 .hero-headline-wrapper {
   display: flex;
@@ -202,6 +252,16 @@ p {
   text-align: center;
   flex-direction: column;
 }
+
+.hero-logo {
+  width: 80vw;
+}
+
+.hero-arrow {
+  width: 2em;
+  margin-top: 0vh;
+}
+
 
 
 
@@ -283,6 +343,16 @@ p {
   .footer-item-2 {
     flex-direction: row;
   }
+
+  .hero-logo {
+    width: 60vw;
+  }
+
+  .hero-arrow {
+    width: 3em;
+    margin-top: -12vh;
+  }
+
 
 
   /* Only change the pixels below for large screens as desired */
