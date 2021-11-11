@@ -17,12 +17,12 @@ html {
 :root {
   --link-color: #8CA16A;
   --overlay-color: #DBD1C0;
-  --body-typeface: 'Inter', sans-serif;
-  --main-heading: 'Inter', sans-serif;
+  --body-typeface: 'Nunito', sans-serif;
+  --main-heading: 'Nunito', sans-serif;
   --background-color: #FDFBF7;
   --header-background-color: #1C322F;
-  --body-text: #234742;
-  --project-headings: #234742;
+  --body-text: #1C322F;
+  --project-headings: #1C322F;
   --hover-color: #CCAE3D;
 }
 
@@ -34,14 +34,13 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--background-color);
-  color: var(--body-text);
 }
 
 
 
 /* Making all images responsive */
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   vertical-align: top;
 
@@ -55,7 +54,7 @@ h1 {
   font-size: 2.175em;
   font-family: var(--main-heading);
   line-height: 1.2em;
-  margin-bottom: 0.4em;
+  margin-bottom: .5em;
 }
 
 .project-title {
@@ -63,12 +62,11 @@ h1 {
 }
 
 .project-title-overlay {
-  font-size: 2.25em;
+  font-size: 1.875em;
 }
 
 .categories {
-   text-transform: uppercase; 
-   font-size: 1.5em;
+  text-transform: uppercase;
 }
 
 .hero-headline {
@@ -88,7 +86,7 @@ a:hover {
 
 p {
   font-size: 1.5em;
-  line-height: 1.5;
+  line-height: 1.3;
   margin-bottom: 1em;
 }
 
@@ -152,7 +150,7 @@ p {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 1.5em 1em 1em 1em;
+  padding: 2em 3em 2em 3em;
   text-align: center;
 }
 
@@ -170,10 +168,7 @@ p {
 
 .gallery{
   margin: 10px 50px;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  background-color: ;
 }
 
 .gallery img{
@@ -186,22 +181,25 @@ p {
   transform: scale(1.1);
 }
 
-
 /* Hero */
 
 .branding-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0em 2em 0em 2em;
+  padding: 1em 2em 0em 2em;
   align-items: center;
 
+}
+
+.navigation-item {
+  /* width: 7em; */
 }
 
 .navigation-link {
   font-size: .6rem;
   padding-bottom: 1rem;
-  width: 8rem;
+  width: 6rem;
   display: block;
   text-align: center;
 }
@@ -210,7 +208,7 @@ p {
   background: url(mikaela-johnson-highlight-squiggle.svg);
   /* z-index: 50; */
   background-repeat: repeat-x;
-  background-position-y: 2.5rem;
+  background-position-y: 2rem;
   /* background-size: 86px 5px; */
 }
 
@@ -220,7 +218,7 @@ p {
   justify-content: space-between;
   /* padding: 1em 3em 0em 3em; */
   align-items: center;
-   text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 
@@ -350,7 +348,7 @@ p {
   }
 
   h1 {
-    font-size: 3.5em;
+    font-size: 3em;
   }
 
   .navigation-item {
@@ -359,27 +357,25 @@ p {
 
   }
 
-  .sub-navigation-item {
-  }
+  .sub-navigation-item {}
 
   .navigation-link {
-    font-size: 1.5em;
-    text-transform: uppercase; 
+    font-size: 1rem;
+    text-transform: uppercase;
   }
 
   .hero-headline-wrapper {
-    padding: 10em 8em 22em 4em;
+    padding: 4em 8em;
 
   }
 
   .branding-navigation {
-    padding: 1em 2.25em 0em 2.25em;
+    padding: 1em 3em 0em 3em;
   }
 
   .main-footer {
     flex-direction: row;
     text-transform: uppercase;
-    font-size: 1.6rem;
   }
 
   .footer-item-2 {
