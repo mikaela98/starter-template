@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <link rel="icon" href="favicon-72x72.png" type="image/x-icon">
   <meta charset="UTF-8">
   <title>Simple Creative Portfolio 2022</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +21,7 @@
 </head>
 
 <body>
+  <a name="top"></a>
   <section class="hero">
     <header class="hero-header">
       <ul class="branding-navigation">
@@ -39,7 +41,18 @@
     </header>
 
     <div class="hero-headline-wrapper">
-      <figure class="hero-logo"><img src="mikaela-johnson-header.svg" alt="Mikaela Johnson"></figure>
+      <svg viewbox="0 10 425 170">
+        <path id="curve"
+        d="M6, 150C49.63,93,105.79,36.65,156.2,47.55,207.89,58.74,213,131.91,264,150c40.67,14.43,108.576.91,229-145" />
+        <text x="25">
+          <textPath xlink:href="#curve">
+            I'm Mikaela. A cross-functional creative who loves branding, creating social media ads, and illustration.
+          </textPath>
+        </text>
+      </svg>
+
+      <figure class="to-the-work"><a href="#work">To the work</a></figure>
+      <figure class="hero-arrow"><img src="hero-arrow.svg"></figure>
     </div>
     <footer class="hero-footer">
       <ul class="footer-navigation">
@@ -47,6 +60,7 @@
     </footer>
   </section>
   
+  <a name="work"></a>
   <main class="work-wrapper">
     <section class="portfolio">
       <ul class="grid">
@@ -70,11 +84,11 @@
         </li>
         <li class="project">
           <figure>
-            <img src="mikaela-johnson-sparks.png" alt="">
+            <img src="mikaela-johnson-welcoming-embrace.jpg" alt="">
           </figure>
           <a href="common-ground.html">
             <div class="overlay solid">
-              <h1 class="project-title-overlay">Common Ground</h1>
+              <h1 class="project-title-overlay">Welcoming Embrace</h1>
               <p class="categories">Branding &amp; Collateral</p>
             </div>
           </a>
@@ -82,7 +96,7 @@
         </li>
         <li class="project">
 
-          <figure><img src="mikaela-johnson-roost-hotels.jpg" alt=""></figure>
+          <figure><img src="mikaela-johnson-roost-hotels.jpg" alt="Roost Hotels"></figure>
           <a href="roost-hotels.html">
             <div class="overlay solid">
               <h1 class="project-title-overlay">Roost Hotels</h1>
@@ -96,15 +110,24 @@
 
   <footer class="main-footer">
     <div class="footer-item-1">
-      <a href="mailto:hello@mikaelajohnson.com">Coffee? hello@mikaelajohnson.com</a>
+      <h2>Coffee?</h2>
+      <figure class="email-arrow"><img src="right-arrow.svg">
+      <a href="mailto:hello@mikaelajohnson.com">hello@mikaelajohnson.com</a></figure>
     </div>
 
     <ul class="footer-item-2">
       <li class="social-item"><a href="https://www.linkedin.com/in/mikaela-johnson-4116511a3/"
-          target="_blank">Linkedin</a></li>
-      <li class="social-item"><a href="https://www.instagram.com/mikaelaxjohnson/" target="_blank">Instagram</a></li>
+          target="_blank">linkedin</a></li>
+      <li class="social-item"><a href="https://www.instagram.com/mikaelaxjohnson/" target="_blank">instagram</a></li>
+      <li class="social-item"><a href="https://www.behance.net/mikaelajohnson" target="_blank">behance</a></li>
     </ul>
   </footer>
+
+  <div class="footer-item-3">
+    <figure class="top-arrow"><img src="up-arrow.svg"></figure>
+    <a href="#top">Back to top</a>
+    </div>
+
 </body>
 
 </html>

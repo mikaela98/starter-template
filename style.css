@@ -15,15 +15,15 @@ html {
 
 /* Styling Variables */
 :root {
-  --link-color: #8CA16A;
-  --overlay-color: #DBD1C0;
+  --link-color: #B98348;
+  --overlay-color: #B98348;
   --body-typeface: 'Inter', sans-serif;
   --main-heading: 'Inter', sans-serif;
-  --background-color: #FDFBF7;
-  --header-background-color: #1C322F;
-  --body-text: #234742;
-  --project-headings: #234742;
-  --hover-color: #CCAE3D;
+  --background-color: #F5EFE7;
+  --body-text: #1F1F1F;
+  --project-headings: #1F1F1F;
+  --hover-color: #B98348;
+  --footer-color: #D6DCD5;
 }
 
 
@@ -43,7 +43,6 @@ body {
 img {
   width: 100%;
   height: auto;
-  vertical-align: top;
 
 }
 
@@ -63,17 +62,21 @@ h1 {
 }
 
 .project-title-overlay {
-  font-size: 2.25em;
+  font-size: 1.75em;
 }
 
 .categories {
    text-transform: uppercase; 
-   font-size: 1.5em;
+   font-size: 1em;
 }
 
 .hero-headline {
   color: var(--project-headings);
   background-color: var(--header-background-color)
+}
+
+path {
+  fill: transparent;
 }
 
 /* Hyperlink Styles */
@@ -110,8 +113,8 @@ p {
 /* Defining the work page grid for mobile and global */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* grid-gap: 1rem; */
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-gap: 1rem;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width. Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
@@ -152,8 +155,9 @@ p {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 1.5em 1em 1em 1em;
+  padding: 1.5em 1em 3em 1.5em;
   text-align: center;
+  background-color: var(--footer-color);
 }
 
 .footer-item-2 {
@@ -166,14 +170,51 @@ p {
   padding: 0 1rem;
 }
 
+h2 {
+  font-size: 3.5em;
+  text-transform: uppercase; 
+  font-weight: 600;
+  font-style: italic;
+}
+
+.footer-item-3{
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  font-size: 0.95em;
+  justify-content: center;
+  padding: 0em 2.25em 1em 2.25em;
+  background-color: var(--footer-color);
+}
+
+.email-arrow{
+  width: 10%;
+  margin: 0;
+}
+
+.top-arrow{
+  padding: 0em 0.5em 0em 0em;
+  width: 1.3em;
+}
+
+
+.to-the-work{
+  text-transform: uppercase;
+  font-size: .75em;
+  color: var(--link-color);
+}
+
+
 /*Illustration Gallery*/
 
 .gallery{
   margin: 10px 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: ;
+  background-color: var(--background-color)
 }
 
 .gallery img{
@@ -193,25 +234,25 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0em 2em 0em 2em;
+  padding: 0em 0.5em 0em 0.5em;
   align-items: center;
 
 }
 
 .navigation-link {
-  font-size: .6rem;
   padding-bottom: 1rem;
   width: 8rem;
   display: block;
   text-align: center;
+  font-size: 0.9em;
 }
 
 .navigation-link:hover {
   background: url(mikaela-johnson-highlight-squiggle.svg);
-  /* z-index: 50; */
+  z-index: 50;
   background-repeat: repeat-x;
-  background-position-y: 2.5rem;
-  /* background-size: 86px 5px; */
+  background-position-y: 1.5rem;
+  background-size: 2px 86px 5px 2px;
 }
 
 .branding-sub-navigation {
@@ -226,7 +267,7 @@ p {
 
 
 .logo {
-  width: 3.5em;
+  width: 2.5em;
 }
 
 .hero-headline-wrapper {
@@ -237,11 +278,11 @@ p {
   text-align: center;
   padding: 1em 2em;
   flex-direction: column;
+  font-size: 10px;
 }
 
-.hero-headline {
-  font-size: 56px;
-  padding: 0em 7em 0em 7em;
+.to-the-work{
+  font-size: 1.35em;
 }
 
 .footer-navigation {
@@ -270,12 +311,12 @@ p {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 1em 2em;
+  padding: 1em 4em;
   flex-direction: column;
 }
 
 .about-photo {
-  width: 100%;
+  width: 50%;
   margin-bottom: 2rem;
 }
 
@@ -322,6 +363,7 @@ p {
 
 .arrow {
   padding-right: 1em;
+  justify-content: center;
 }
 
 .project-details {
@@ -343,6 +385,40 @@ p {
   }
 }
 
+.grid {
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-gap: 50px;
+  padding: 50px;
+}
+
+.project-wrapper {
+  flex-direction: row;
+}
+
+.project-aside {
+  width: 28vw;
+  height: 40vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5vh;
+
+
+}
+
+.project-details {
+  width: 68vw;
+
+}
+
+.project-title-overlay {
+  font-size: 2em;
+}
+
+.categories {
+  text-transform: uppercase; 
+  font-size: 1.75em;
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   body {
@@ -351,6 +427,13 @@ p {
 
   h1 {
     font-size: 3.5em;
+  }
+
+  h2 {
+    font-size: 3.5em;
+    text-transform: uppercase; 
+    font-weight: 600;
+    font-style: italic;
   }
 
   .navigation-item {
@@ -363,12 +446,17 @@ p {
   }
 
   .navigation-link {
-    font-size: 1.5em;
     text-transform: uppercase; 
+    font-size: 1.25em;
+  }
+
+  .navigation-link:hover {
+    background-position-y: 2.2rem;
   }
 
   .hero-headline-wrapper {
-    padding: 10em 8em 22em 4em;
+    padding: 0px;
+    font-size: 0.62em;
 
   }
 
@@ -376,30 +464,57 @@ p {
     padding: 1em 2.25em 0em 2.25em;
   }
 
+  .logo {
+    width: 4em;
+  }
+
   .main-footer {
     flex-direction: row;
-    text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 1.65rem;
   }
 
   .footer-item-2 {
     flex-direction: row;
   }
 
+  .footer-item-3{
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    font-size: 1.35em;
+    justify-content: right;
+    padding: 0em 2.25em 1em 2.25em;
+    background-color: var(--footer-color);
+  }
+
+  .to-the-work{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: var(--link-color);
+
+    /*font-family: 'Averia Serif Libre', cursive;
+    font-style: italic;*/
+  }
+
+  .email-arrow{
+    width: 20%;
+  }
+
   .hero-logo {
-    width: 60vw;
+    width: 75vw;
   }
 
   .hero-arrow {
     width: 3em;
-    margin-top: -12vh;
   }
 
 
 
   /* Only change the pixels below for large screens as desired */
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(850px, 1fr));
+    grid-gap: 80px;
+    padding: 80px;
   }
 
   .project-wrapper {
@@ -424,7 +539,7 @@ p {
 
   .about-wrapper {
     flex-direction: row;
-    padding: 4em 12em;
+    padding: 6em 12em;
   }
 
   .about-photo {
@@ -433,8 +548,37 @@ p {
   }
 
   .about-bio {
-    width: 70%;
+    width: 60%;
     padding: 3rem;
+  }
+
+  .about-introduction {
+    width: 80%;
+    padding-bottom: 3em;
+  }
+
+  .project-title-overlay {
+    font-size: 3em;
+  }
+  
+  .categories {
+    text-transform: uppercase; 
+    font-size: 1.9em;
+  }
+
+  .footer-item-3{
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    justify-content: right;
+    padding: 0em 2.25em 1em 2.25em;
+    background-color: var(--footer-color);
+  }
+  
+  .top-arrow{
+    padding: 0em 0.5em 0em 0em;
+    width: 1.3em;
   }
 
 
