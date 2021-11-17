@@ -5,19 +5,24 @@
   <link rel="icon" href="favicon-72x72.png" type="image/x-icon">
   <meta charset="UTF-8">
   <title>Simple Creative Portfolio 2022</title>
+  <meta name="description"
+    content="This is an example of a meta description. This will often show up in search results.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <script src="https://kit.fontawesome.com/d300c2ea15.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-02Q17ZPQ0S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-02Q17ZPQ0S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-02Q17ZPQ0S');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-02Q17ZPQ0S');
+  </script>
 </head>
 
 <body>
@@ -43,7 +48,7 @@
     <div class="hero-headline-wrapper">
       <svg viewbox="0 10 425 170">
         <path id="curve"
-        d="M6, 150C49.63,93,105.79,36.65,156.2,47.55,207.89,58.74,213,131.91,264,150c40.67,14.43,108.576.91,229-145" />
+          d="M6, 150C49.63,93,105.79,36.65,156.2,47.55,207.89,58.74,213,131.91,264,150c40.67,14.43,108.576.91,229-145" />
         <text x="25">
           <textPath xlink:href="#curve">
             I'm Mikaela. A cross-functional creative who loves branding, creating social media ads, and illustration.
@@ -59,7 +64,7 @@
       </ul>
     </footer>
   </section>
-  
+
   <a name="work"></a>
   <main class="work-wrapper">
     <section class="portfolio">
@@ -111,8 +116,14 @@
   <footer class="main-footer">
     <div class="footer-item-1">
       <h2>Coffee?</h2>
-      <figure class="email-arrow"><img src="right-arrow.svg">
-      <a href="mailto:hello@mikaelajohnson.com">hello@mikaelajohnson.com</a></figure>
+      <a href="mailto:hello@mikaelajohnson.com" class="email-address-link-wrapper">
+        <figure class="email-arrow"><svg viewBox="0 0 75 20" fill="#1f1f1f" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M64.9474 20L74.4929 10.4545L64.9474 0.909088L63.3068 2.5284L70.0611 9.28267H0.75V11.6264H70.0611L63.3068 18.3594L64.9474 20Z"
+              fill="#1F1F1F" class="right-arrow-path" />
+          </svg></figure>
+        <div class="email-address">hello@mikaelajohnson.com</div>
+      </a>
     </div>
 
     <ul class="footer-item-2">
@@ -126,7 +137,7 @@
   <div class="footer-item-3">
     <figure class="top-arrow"><img src="up-arrow.svg"></figure>
     <a href="#top">Back to top</a>
-    </div>
+  </div>
 
 </body>
 

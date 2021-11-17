@@ -57,6 +57,13 @@ h1 {
   margin-bottom: 0.4em;
 }
 
+h2 {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-style: italic;
+}
+
 .project-title {
   text-transform: uppercase;
 }
@@ -66,8 +73,8 @@ h1 {
 }
 
 .categories {
-   text-transform: uppercase; 
-   font-size: 1em;
+  text-transform: uppercase;
+  font-size: 1em;
 }
 
 .hero-headline {
@@ -75,7 +82,8 @@ h1 {
   background-color: var(--header-background-color)
 }
 
-path {
+/* Type on a path styles */
+#curve {
   fill: transparent;
 }
 
@@ -89,11 +97,15 @@ a:hover {
   color: var(--hover-color);
 }
 
+
 p {
   font-size: 1.5em;
   line-height: 1.5;
   margin-bottom: 1em;
 }
+
+
+
 
 
 
@@ -151,6 +163,9 @@ p {
   color: #FDFBF7;
 }
 
+
+/* Footer Styles - Global and mobile */
+
 .main-footer {
   display: flex;
   justify-content: space-between;
@@ -159,6 +174,16 @@ p {
   text-align: center;
   background-color: var(--footer-color);
 }
+
+
+.footer-item-1 {}
+
+.email-address-link-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 
 .footer-item-2 {
   display: flex;
@@ -170,14 +195,7 @@ p {
   padding: 0 1rem;
 }
 
-h2 {
-  font-size: 3.5em;
-  text-transform: uppercase; 
-  font-weight: 600;
-  font-style: italic;
-}
-
-.footer-item-3{
+.footer-item-3 {
   display: flex;
   flex-direction: row;
   text-transform: uppercase;
@@ -187,18 +205,21 @@ h2 {
   background-color: var(--footer-color);
 }
 
-.email-arrow{
+.email-arrow {
   width: 10%;
-  margin: 0;
+  margin-right: 0.875rem;
+
 }
 
-.top-arrow{
+.right-arrow-path {}
+
+
+.top-arrow {
   padding: 0em 0.5em 0em 0em;
   width: 1.3em;
 }
 
-
-.to-the-work{
+.to-the-work {
   text-transform: uppercase;
   font-size: .75em;
   color: var(--link-color);
@@ -207,7 +228,7 @@ h2 {
 
 /*Illustration Gallery*/
 
-.gallery{
+.gallery {
   margin: 10px 50px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -217,7 +238,7 @@ h2 {
   background-color: var(--background-color)
 }
 
-.gallery img{
+.gallery img {
   transition: 1s;
   padding: 15px;
   width: 515px;
@@ -247,6 +268,7 @@ h2 {
   font-size: 0.9em;
 }
 
+.active-link,
 .navigation-link:hover {
   background: url(mikaela-johnson-highlight-squiggle.svg);
   z-index: 50;
@@ -261,7 +283,7 @@ h2 {
   justify-content: space-between;
   /* padding: 1em 3em 0em 3em; */
   align-items: center;
-   text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 
@@ -281,7 +303,7 @@ h2 {
   font-size: 10px;
 }
 
-.to-the-work{
+.to-the-work {
   font-size: 1.35em;
 }
 
@@ -380,9 +402,7 @@ h2 {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  body {
-
-  }
+  body {}
 }
 
 .grid {
@@ -415,15 +435,13 @@ h2 {
 }
 
 .categories {
-  text-transform: uppercase; 
+  text-transform: uppercase;
   font-size: 1.75em;
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body {
-
-  }
+  body {}
 
   h1 {
     font-size: 3.5em;
@@ -431,22 +449,14 @@ h2 {
 
   h2 {
     font-size: 3.5em;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     font-weight: 600;
     font-style: italic;
   }
 
-  .navigation-item {
-    /* width: 12em; */
-
-
-  }
-
-  .sub-navigation-item {
-  }
 
   .navigation-link {
-    text-transform: uppercase; 
+    text-transform: uppercase;
     font-size: 1.25em;
   }
 
@@ -473,11 +483,15 @@ h2 {
     font-size: 1.65rem;
   }
 
+  .email-address-link-wrapper {
+    justify-content: flex-start;
+  }
+
   .footer-item-2 {
     flex-direction: row;
   }
 
-  .footer-item-3{
+  .footer-item-3 {
     display: flex;
     flex-direction: row;
     text-transform: uppercase;
@@ -487,7 +501,7 @@ h2 {
     background-color: var(--footer-color);
   }
 
-  .to-the-work{
+  .to-the-work {
     text-transform: uppercase;
     font-size: 2.5em;
     color: var(--link-color);
@@ -496,7 +510,7 @@ h2 {
     font-style: italic;*/
   }
 
-  .email-arrow{
+  .email-arrow {
     width: 20%;
   }
 
@@ -560,13 +574,13 @@ h2 {
   .project-title-overlay {
     font-size: 3em;
   }
-  
+
   .categories {
-    text-transform: uppercase; 
+    text-transform: uppercase;
     font-size: 1.9em;
   }
 
-  .footer-item-3{
+  .footer-item-3 {
     display: flex;
     flex-direction: row;
     text-transform: uppercase;
@@ -575,8 +589,8 @@ h2 {
     padding: 0em 2.25em 1em 2.25em;
     background-color: var(--footer-color);
   }
-  
-  .top-arrow{
+
+  .top-arrow {
     padding: 0em 0.5em 0em 0em;
     width: 1.3em;
   }
@@ -586,14 +600,10 @@ h2 {
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  body {
-
-  }
+  body {}
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  body {
-
-  }
+  body {}
 }
