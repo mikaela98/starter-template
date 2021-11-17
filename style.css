@@ -241,7 +241,7 @@ p {
 .gallery img {
   transition: 1s;
   padding: 15px;
-  width: 515px;
+  width: 80vw;
 }
 
 .gallery img:hover {
@@ -270,7 +270,7 @@ p {
 
 .active-link,
 .navigation-link:hover {
-  background: url(mikaela-johnson-highlight-squiggle.svg);
+  background: url(squiggle-highlight.svg);
   z-index: 50;
   background-repeat: repeat-x;
   background-position-y: 1.5rem;
@@ -578,6 +578,10 @@ p {
   .categories {
     text-transform: uppercase;
     font-size: 1.9em;
+  }
+
+  .gallery img{
+  width: 31vw;
   }
 
   .footer-item-3 {
