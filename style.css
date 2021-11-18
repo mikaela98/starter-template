@@ -126,7 +126,8 @@ p {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 50px;
+  padding: 15px;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width. Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
@@ -198,15 +199,16 @@ p {
 .footer-item-3 {
   display: flex;
   flex-direction: row;
-  text-transform: uppercase;
-  font-size: 0.95em;
   justify-content: center;
   padding: 0em 2.25em 1em 2.25em;
   background-color: var(--footer-color);
+  font-family: 'Averia Serif Libre', cursive;
+  font-style: italic;
+  font-size: 1.2em;
 }
 
 .email-arrow {
-  width: 10%;
+  width: 6%;
   margin-right: 0.875rem;
 
 }
@@ -220,7 +222,6 @@ p {
 }
 
 .to-the-work {
-  text-transform: uppercase;
   font-size: .75em;
   color: var(--link-color);
 }
@@ -255,26 +256,27 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0em 0.5em 0em 0.5em;
+  padding: 0em 0.5em em 0.5em;
   align-items: center;
 
 }
 
 .navigation-link {
+  padding-top: 1em;
   padding-bottom: 1rem;
   width: 8rem;
   display: block;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 1.2em;
+  text-transform: uppercase;
 }
 
-.active-link,
 .navigation-link:hover {
   background: url(squiggle-highlight.svg);
   z-index: 50;
   background-repeat: repeat-x;
-  background-position-y: 1.5rem;
-  background-size: 2px 86px 5px 2px;
+  background-position-y: 3.2rem;
+  background-size: 0px 86px 5px 20px;
 }
 
 .branding-sub-navigation {
@@ -289,7 +291,8 @@ p {
 
 
 .logo {
-  width: 2.5em;
+  margin-top: 1em;
+  width: 2.95em;
 }
 
 .hero-headline-wrapper {
@@ -298,13 +301,16 @@ p {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 1em 2em;
+  padding: 1em 1em;
   flex-direction: column;
-  font-size: 10px;
+  font-size: 10.25px;
 }
 
 .to-the-work {
-  font-size: 1.35em;
+  font-family: 'Averia Serif Libre', cursive;
+  font-style: italic;
+  font-size: 2em;
+
 }
 
 .footer-navigation {
@@ -325,6 +331,11 @@ p {
 
 .hero-about {
   flex: 1;
+}
+
+.about-introduction{
+  display: flex;
+  padding: 0em 10em 2.5em 0em;
 }
 
 .about-wrapper {
@@ -369,13 +380,13 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1em;
+  padding: 0em 1em 5em 1em;
 }
 
 .project-aside {
-  width: 100%;
+  display: block;
   color: var(--body-text);
-  padding: 1em;
+  padding: 0em 1em 1em 1em;
 }
 
 .project-navigation {
@@ -398,8 +409,6 @@ p {
 
 
 
-
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   body {}
@@ -407,8 +416,6 @@ p {
 
 .grid {
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  grid-gap: 50px;
-  padding: 50px;
 }
 
 .project-wrapper {
@@ -449,13 +456,11 @@ p {
 
   h2 {
     font-size: 3.5em;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-style: italic;
   }
 
 
   .navigation-link {
+    padding-top: 0em;
     text-transform: uppercase;
     font-size: 1.25em;
   }
@@ -494,20 +499,16 @@ p {
   .footer-item-3 {
     display: flex;
     flex-direction: row;
-    text-transform: uppercase;
-    font-size: 1.35em;
     justify-content: right;
     padding: 0em 2.25em 1em 2.25em;
     background-color: var(--footer-color);
   }
 
   .to-the-work {
-    text-transform: uppercase;
     font-size: 2.5em;
     color: var(--link-color);
-
-    /*font-family: 'Averia Serif Libre', cursive;
-    font-style: italic;*/
+    font-family: 'Averia Serif Libre', cursive;
+    font-style: italic;
   }
 
   .email-arrow {
@@ -566,11 +567,6 @@ p {
     padding: 3rem;
   }
 
-  .about-introduction {
-    width: 80%;
-    padding-bottom: 3em;
-  }
-
   .project-title-overlay {
     font-size: 3em;
   }
@@ -587,8 +583,7 @@ p {
   .footer-item-3 {
     display: flex;
     flex-direction: row;
-    text-transform: uppercase;
-    font-size: 1.25em;
+    font-size: 1.6em;
     justify-content: right;
     padding: 0em 2.25em 1em 2.25em;
     background-color: var(--footer-color);
@@ -596,7 +591,7 @@ p {
 
   .top-arrow {
     padding: 0em 0.5em 0em 0em;
-    width: 1.3em;
+    width: 1.2em;
   }
 
 
