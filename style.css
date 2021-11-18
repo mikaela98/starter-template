@@ -202,7 +202,7 @@ p {
   justify-content: center;
   padding: 0em 2.25em 1em 2.25em;
   background-color: var(--footer-color);
-  font-family: 'Averia Serif Libre', cursive;
+  font-family: 'Averia Serif Libre', serif;
   font-style: italic;
   font-size: 1.2em;
 }
@@ -307,7 +307,7 @@ p {
 }
 
 .to-the-work {
-  font-family: 'Averia Serif Libre', cursive;
+  font-family: 'Averia Serif Libre', serif;
   font-style: italic;
   font-size: 2em;
 
@@ -507,7 +507,7 @@ p {
   .to-the-work {
     font-size: 2.5em;
     color: var(--link-color);
-    font-family: 'Averia Serif Libre', cursive;
+    font-family: 'Averia Serif Libre', serif;
     font-style: italic;
   }
 
