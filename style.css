@@ -53,7 +53,9 @@ img {
 
 h1 {
   font-size: 1.25em;
+  line-height: 1.3em;
   font-family: var(--main-heading);
+  padding-bottom: 0.5em;
 }
 
 h2 {
@@ -65,10 +67,6 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-size: 0.8em;
-}
-
-.project-title {
-  text-transform: uppercase;
 }
 
 .hero-headline {
@@ -103,7 +101,7 @@ a:hover {
 
 
 p {
-  font-size: 1.4em;
+  font-size: 1.25em;
   line-height: 1.5;
   margin-bottom: 1em;
 }
@@ -130,7 +128,7 @@ p {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  grid-gap: 50px;
+  grid-gap: 10px;
   padding: 15px;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width. Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
@@ -176,7 +174,7 @@ p {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 2em 4em 3em 4em;
+  padding: 2em 1em 3em 1em;
   text-align: center;
   background-color: var(--footer-color);
 }
@@ -196,7 +194,7 @@ p {
 .footer-item-2 {
   display: flex;
   flex-direction: column;
-  font-size: 1.25em;
+  font-size: 1.1em;
 
 }
 
@@ -211,11 +209,11 @@ p {
   padding: 0em 4em 1em 4em;
   background-color: var(--footer-color);
   text-transform: uppercase;
-  font-size: 1.25em;
+  font-size: 1.1em;
 }
 
 .email-arrow {
-  width: 11%;
+  width: 12vw;
   margin-right: 0.875rem;
 }
 
@@ -263,7 +261,7 @@ p {
   width: 8rem;
   display: block;
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1.1em;
   text-transform: uppercase;
 }
 
@@ -304,8 +302,9 @@ p {
 .headline-description{
     display: flex;
     justify-content: center;
-    padding: 1.5em 1em 1.5em 1em;
+    padding: 2em 1em 1em 1em;
     line-height: 1.6em;
+    font-size: 1.1em;
 }
 
 .hero-logo {
@@ -317,11 +316,12 @@ p {
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
-  font-size: 1.25em;
+  font-size: 1.1em;
 }
 
 .hero-arrow {
   width: 6%;
+  padding-bottom: 1em;
 }
 
 .footer-navigation {
@@ -379,6 +379,10 @@ p {
   padding: 1em 1em 5em 1em;
 }
 
+.project-title{
+  font-size: 3em;
+}
+
 .project-aside {
   display: flex;
   justify-content: center;
@@ -387,6 +391,13 @@ p {
   width: 100%;
   min-height: 35vh;
   margin-top: 8em;
+  padding: 1em;
+  font-size: 1.1em;
+}
+
+.project-type{
+  font-style: italic;
+  padding-bottom: 0.75em;
 }
 
 .project-navigation {
@@ -411,9 +422,9 @@ p {
   flex-direction: row;
   justify-content: right;
   padding-right: 2em;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 .next-project{
@@ -468,7 +479,7 @@ p {
   }
   
   h2 {
-    font-size: 2.175em;
+    font-size: 3em;
   }
   
   h3 {
@@ -494,16 +505,17 @@ p {
 
   .hero-headline-wrapper {
     justify-content: space-between;
-    padding: 2em 47em 0em 4em;
+    padding: 5em 47em 0em 4em;
     flex-direction: row;
   }
 
   .to-the-work{
+    padding: 4em 0em 0em 0em;
     font-size: 1.25em;
   }
 
   .headline-description{
-    padding: 0em;
+    padding: 4em 0em 0em 0em;
     width: 30vw;
     line-height: 1.6em;
     font-size: 1.25em;
@@ -511,6 +523,10 @@ p {
 
   .branding-navigation {
     padding: 1em 2.25em 0em 2.25em;
+  }
+
+  .project-title-overlay{
+    font-size: 3em;
   }
 
   .logo {
@@ -524,6 +540,9 @@ p {
 
   .main-footer {
     flex-direction: row;
+    padding: 2em 4em 3em 4em;
+    text-align: left;
+    background-color: var(--footer-color);
   }
 
   .email-address-link-wrapper {
@@ -532,10 +551,11 @@ p {
 
   .footer-item-2 {
     flex-direction: row;
+    font-size: 1.25em;
   }
 
   .email-arrow {
-    width: 20%;
+    width: 4vw;
   }
 
   .hero-logo {
@@ -566,6 +586,15 @@ p {
     position: sticky;
     top: 5vh;
     padding: 0em 1em 1em 1em;
+  }
+
+  .project-title{
+    font-size: 2.175em;
+  }
+
+  .project-type{
+    font-style: italic;
+    padding-bottom: 0.5em;
   }
 
   .project-details {
