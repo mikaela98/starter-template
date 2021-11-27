@@ -52,7 +52,7 @@ img {
 /* Mobile and Global Typography */
 
 h1 {
-  font-size: 2.175em;
+  font-size: 1.25em;
   font-family: var(--main-heading);
 }
 
@@ -64,7 +64,7 @@ h2 {
 
 h3 {
   text-transform: uppercase;
-  font-size: 1.7em;
+  font-size: 0.8em;
 }
 
 .project-title {
@@ -263,7 +263,7 @@ p {
   width: 8rem;
   display: block;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.25em;
   text-transform: uppercase;
 }
 
@@ -298,16 +298,14 @@ p {
 .hero-headline-wrapper {
   display: flex;
   flex: 1;
-  justify-content: space-between;
-  padding: 2em 47em 0em 4em;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .headline-description{
-  display: flex;
-  justify-content: left;
-  width: 30vw;
-  line-height: 1.6em;
+    display: flex;
+    justify-content: center;
+    padding: 1.5em 1em 1.5em 1em;
+    line-height: 1.6em;
 }
 
 .hero-logo {
@@ -323,8 +321,7 @@ p {
 }
 
 .hero-arrow {
-  width: 2.2vw;
-  margin-top: 0vh;
+  width: 6%;
 }
 
 .footer-navigation {
@@ -370,7 +367,6 @@ p {
 .about-bio {
   width: 100%;
   text-align: left;
-  font-size: 0.68em;
 }
 
 
@@ -440,7 +436,7 @@ p {
 }
 
 .grid {
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 /* .project-wrapper {
@@ -468,11 +464,15 @@ p {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 2.175em;
   }
-
+  
   h2 {
-    font-size: 3.5em;
+    font-size: 2.175em;
+  }
+  
+  h3 {
+    font-size: 1.7em;
   }
 
   .type-on-path-text{
@@ -493,12 +493,20 @@ p {
   }
 
   .hero-headline-wrapper {
+    justify-content: space-between;
+    padding: 2em 47em 0em 4em;
+    flex-direction: row;
+  }
 
-
+  .to-the-work{
+    font-size: 1.25em;
   }
 
   .headline-description{
+    padding: 0em;
+    width: 30vw;
     line-height: 1.6em;
+    font-size: 1.25em;
   }
 
   .branding-navigation {
@@ -535,7 +543,7 @@ p {
   }
 
   .hero-arrow {
-
+      width: 2.2vw;
   }
 
 
@@ -578,7 +586,6 @@ p {
   .about-bio {
     width: 60%;
     padding: 3rem;
-    font-size: 0.95em;
   }
 
   .gallery img {
