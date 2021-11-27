@@ -17,6 +17,7 @@ html {
 :root {
   --link-color: #B98348;
   --overlay-color: #B98348;
+  --type-on-path-color: #B98348;
   --body-typeface: 'Inter', sans-serif;
   --main-heading: 'Inter', sans-serif;
   --background-color: #F5EFE7;
@@ -53,28 +54,21 @@ img {
 h1 {
   font-size: 2.175em;
   font-family: var(--main-heading);
-  line-height: 1.2em;
-  margin-bottom: 0.4em;
 }
 
 h2 {
-  font-size: 3.5em;
+  font-size: 2.175em;
   text-transform: uppercase;
   font-weight: 600;
-  font-style: italic;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.7em;
 }
 
 .project-title {
   text-transform: uppercase;
-}
-
-.project-title-overlay {
-  font-size: 1.75em;
-}
-
-.categories {
-  text-transform: uppercase;
-  font-size: 1em;
 }
 
 .hero-headline {
@@ -83,8 +77,18 @@ h2 {
 }
 
 /* Type on a path styles */
-#curve {
-  fill: transparent;
+.type-on-path-text{
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+}
+
+ #curve {
+  fill: transparent; 
+} 
+
+.color-type-on-path{
+
 }
 
 /* Hyperlink Styles */
@@ -99,7 +103,7 @@ a:hover {
 
 
 p {
-  font-size: 1.5em;
+  font-size: 1.4em;
   line-height: 1.5;
   margin-bottom: 1em;
 }
@@ -153,6 +157,7 @@ p {
   padding: 1em;
 }
 
+
 /* Solid Colour Overlay */
 .solid {
   background-color: var(--overlay-color);
@@ -171,13 +176,15 @@ p {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 1.5em 1em 3em 1.5em;
+  padding: 2em 4em 3em 4em;
   text-align: center;
   background-color: var(--footer-color);
 }
 
 
-.footer-item-1 {}
+.footer-item-1 {
+  font-size: 1.25em;
+}
 
 .email-address-link-wrapper {
   display: flex;
@@ -189,6 +196,7 @@ p {
 .footer-item-2 {
   display: flex;
   flex-direction: column;
+  font-size: 1.25em;
 
 }
 
@@ -200,29 +208,21 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 0em 2.25em 1em 2.25em;
+  padding: 0em 4em 1em 4em;
   background-color: var(--footer-color);
-  font-family: 'Averia Serif Libre', serif;
-  font-style: italic;
-  font-size: 1.2em;
+  text-transform: uppercase;
+  font-size: 1.25em;
 }
 
 .email-arrow {
-  width: 6%;
+  width: 11%;
   margin-right: 0.875rem;
 }
-
-.right-arrow-path {}
 
 
 .top-arrow {
   padding: 0em 0.5em 0em 0em;
   width: 1.3em;
-}
-
-.to-the-work {
-  font-size: .75em;
-  color: var(--link-color);
 }
 
 
@@ -254,10 +254,7 @@ p {
 .branding-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 0em 0.5em em 0.5em;
-  align-items: center;
-
+  justify-content: right;
 }
 
 .navigation-link {
@@ -266,7 +263,7 @@ p {
   width: 8rem;
   display: block;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
@@ -281,7 +278,7 @@ p {
 .branding-sub-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: right;
   /* padding: 1em 3em 0em 3em; */
   align-items: center;
   text-transform: uppercase;
@@ -292,24 +289,42 @@ p {
 .logo {
   margin-top: 1em;
   width: 2.95em;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  transform: none;
 }
 
 .hero-headline-wrapper {
   display: flex;
   flex: 1;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1em 1em;
-  flex-direction: column;
-  font-size: 10.25px;
+  justify-content: space-between;
+  padding: 2em 47em 0em 4em;
+  flex-direction: row;
+}
+
+.headline-description{
+  display: flex;
+  justify-content: left;
+  width: 30vw;
+  line-height: 1.6em;
+}
+
+.hero-logo {
+  width: 80vw;
 }
 
 .to-the-work {
-  font-family: 'Averia Serif Libre', serif;
-  font-style: italic;
-  font-size: 2em;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
 
+.hero-arrow {
+  width: 2.2vw;
+  margin-top: 0vh;
 }
 
 .footer-navigation {
@@ -319,7 +334,7 @@ p {
   padding: 0em 3em 1em 3em;
 }
 
-/* Hero */
+/* About */
 
 .hero {
   /* min-height: 100vh;
@@ -348,28 +363,15 @@ p {
 }
 
 .about-photo {
-  width: 50%;
+  width: 100%;
   margin-bottom: 2rem;
 }
 
 .about-bio {
   width: 100%;
   text-align: left;
-  padding: 0;
+  font-size: 0.68em;
 }
-
-
-
-
-.hero-logo {
-  width: 80vw;
-}
-
-.hero-arrow {
-  width: 2em;
-  margin-top: 0vh;
-}
-
 
 
 
@@ -378,7 +380,7 @@ p {
 .project-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 0em 1em 5em 1em;
+  padding: 1em 1em 5em 1em;
 }
 
 .project-aside {
@@ -386,14 +388,15 @@ p {
   justify-content: center;
   flex-direction: column;
   color: var(--body-text);
-  padding: 0em 1em 1em 1em;
   width: 100%;
   min-height: 35vh;
+  margin-top: 8em;
 }
 
 .project-navigation {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .arrow {
@@ -401,11 +404,31 @@ p {
   justify-content: center;
 }
 
+
 .project-details {
   width: 100%;
   padding: 1em;
 }
 
+.next-project-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.next-project{
+  display: flex;
+  flex-direction: row;
+}
+
+.next-project-arrow{
+  width: 4vw;
+  padding-right: 1em;
+}
 
 
 
@@ -439,25 +462,23 @@ p {
 
 } */
 
-.project-title-overlay {
-  font-size: 2em;
-}
-
-.categories {
-  text-transform: uppercase;
-  font-size: 1.75em;
-}
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body {}
+  body {
+  }
 
   h1 {
-    font-size: 3.5em;
+    font-size: 3em;
   }
 
   h2 {
     font-size: 3.5em;
+  }
+
+  .type-on-path-text{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
   }
 
 
@@ -472,9 +493,12 @@ p {
   }
 
   .hero-headline-wrapper {
-    padding: 0px;
-    font-size: 0.62em;
 
+
+  }
+
+  .headline-description{
+    line-height: 1.6em;
   }
 
   .branding-navigation {
@@ -483,11 +507,15 @@ p {
 
   .logo {
     width: 4em;
+    float: none;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
   }
 
   .main-footer {
     flex-direction: row;
-    font-size: 1.65rem;
   }
 
   .email-address-link-wrapper {
@@ -496,21 +524,6 @@ p {
 
   .footer-item-2 {
     flex-direction: row;
-  }
-
-  .footer-item-3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    padding: 0em 2.25em 1em 2.25em;
-    background-color: var(--footer-color);
-  }
-
-  .to-the-work {
-    font-size: 2.5em;
-    color: var(--link-color);
-    font-family: 'Averia Serif Libre', serif;
-    font-style: italic;
   }
 
   .email-arrow {
@@ -522,7 +535,7 @@ p {
   }
 
   .hero-arrow {
-    width: 3em;
+
   }
 
 
@@ -544,13 +557,11 @@ p {
     position: -webkit-sticky;
     position: sticky;
     top: 5vh;
-
-
+    padding: 0em 1em 1em 1em;
   }
 
   .project-details {
-    width: 68vw;
-
+    width: 70vw;
   }
 
 
@@ -567,15 +578,7 @@ p {
   .about-bio {
     width: 60%;
     padding: 3rem;
-  }
-
-  .project-title-overlay {
-    font-size: 3em;
-  }
-
-  .categories {
-    text-transform: uppercase;
-    font-size: 1.9em;
+    font-size: 0.95em;
   }
 
   .gallery img {
@@ -585,9 +588,8 @@ p {
   .footer-item-3 {
     display: flex;
     flex-direction: row;
-    font-size: 1.6em;
+    font-size: 1.25em;
     justify-content: right;
-    padding: 0em 2.25em 1em 2.25em;
     background-color: var(--footer-color);
   }
 
