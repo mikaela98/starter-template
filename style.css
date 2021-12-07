@@ -75,19 +75,17 @@ h3 {
 }
 
 /* Type on a path styles */
-.type-on-path-text{
+.type-on-path-text {
   display: flex;
   justify-content: center;
   font-size: 3em;
 }
 
- #curve {
-  fill: transparent; 
-} 
-
-.color-type-on-path{
-
+#curve {
+  fill: transparent;
 }
+
+.color-type-on-path {}
 
 /* Hyperlink Styles */
 a {
@@ -300,12 +298,12 @@ p {
   flex-direction: column;
 }
 
-.headline-description{
-    display: flex;
-    justify-content: center;
-    padding: 2em 1em 1em 1em;
-    line-height: 1.6em;
-    font-size: 1.1em;
+.headline-description {
+  display: flex;
+  justify-content: center;
+  padding: 2em 1em 1em 1em;
+  line-height: 1.6em;
+  font-size: 1.1em;
 }
 
 .hero-logo {
@@ -313,7 +311,7 @@ p {
 }
 
 .to-the-work {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
@@ -380,7 +378,7 @@ p {
   padding: 1em 1em 5em 1em;
 }
 
-.project-title{
+.project-title {
   font-size: 3em;
 }
 
@@ -395,7 +393,7 @@ p {
   font-size: 1.1em;
 }
 
-.project-type{
+.project-type {
   font-style: italic;
   padding-bottom: 0.75em;
 }
@@ -417,7 +415,7 @@ p {
   padding: 1em;
 }
 
-.next-project-wrapper{
+.next-project-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: right;
@@ -427,12 +425,12 @@ p {
   font-size: 1.25em;
 }
 
-.next-project{
+.next-project {
   display: flex;
   flex-direction: row;
 }
 
-.next-project-arrow{
+.next-project-arrow {
   width: 4vw;
   padding-right: 1em;
 }
@@ -471,22 +469,21 @@ p {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body {
-  }
+  body {}
 
   h1 {
     font-size: 1.7em;
   }
-  
+
   h2 {
     font-size: 3em;
   }
-  
+
   h3 {
     font-size: 1.7em;
   }
 
-  .type-on-path-text{
+  .type-on-path-text {
     display: flex;
     justify-content: center;
     font-size: 3em;
@@ -505,27 +502,35 @@ p {
 
   .hero-headline-wrapper {
     justify-content: space-between;
-    padding: 5em 47em 0em 4em;
+    /* padding: 5em 47em 0em 4em; */
     flex-direction: row;
+    background: lightblue;
   }
 
-  .to-the-work{
+  .to-the-work {
     padding: 4em 0em 0em 0em;
     font-size: 1.25em;
+    background: yellowgreen;
   }
 
-  .headline-description{
+  .headline-description,
+  .spacer {
     padding: 4em 0em 0em 0em;
     width: 30vw;
     line-height: 1.6em;
     font-size: 1.25em;
+    background: hotpink;
+  }
+
+  .spacer {
+    background: orangered;
   }
 
   .branding-navigation {
     padding: 1em 2.25em 0em 2.25em;
   }
 
-  .project-title-overlay{
+  .project-title-overlay {
     font-size: 3em;
   }
 
@@ -535,7 +540,7 @@ p {
     position: absolute;
     top: 4%;
     left: 50%;
-    transform: translate(-50%, -50%);    
+    transform: translate(-50%, -50%);
   }
 
   .main-footer {
@@ -563,7 +568,7 @@ p {
   }
 
   .hero-arrow {
-      width: 2.2vw;
+    width: 2.2vw;
   }
 
 
@@ -588,7 +593,7 @@ p {
     padding: 0em 1em 1em 1em;
   }
 
-  .project-type{
+  .project-type {
     font-style: italic;
     padding-bottom: 0.5em;
   }
