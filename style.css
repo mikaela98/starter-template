@@ -92,7 +92,7 @@ h3 {
 /* Hyperlink Styles */
 a {
   text-decoration: none;
-  color: var(--project-headings)
+  color: var(--project-headings);
 }
 
 a:hover {
@@ -101,9 +101,10 @@ a:hover {
 
 
 p {
-  font-size: 1.25em;
-  line-height: 1.5;
+  font-size: 1em;
+  line-height: 1.6;
   margin-bottom: 1em;
+  color: var(--body-text);
 }
 
 
@@ -390,7 +391,6 @@ p {
   color: var(--body-text);
   width: 100%;
   min-height: 35vh;
-  margin-top: 8em;
   padding: 1em;
   font-size: 1.1em;
 }
@@ -475,7 +475,7 @@ p {
   }
 
   h1 {
-    font-size: 2.175em;
+    font-size: 1.7em;
   }
   
   h2 {
@@ -584,12 +584,8 @@ p {
     height: 40vh;
     position: -webkit-sticky;
     position: sticky;
-    top: 5vh;
+    top: 0vh;
     padding: 0em 1em 1em 1em;
-  }
-
-  .project-title{
-    font-size: 2.175em;
   }
 
   .project-type{
@@ -613,8 +609,9 @@ p {
   }
 
   .about-bio {
-    width: 60%;
+    width: 48%;
     padding: 3rem;
+    font-size: 1.25em;
   }
 
   .gallery img {
