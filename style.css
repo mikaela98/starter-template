@@ -505,17 +505,19 @@ p {
     /* padding: 5em 47em 0em 4em; */
     flex-direction: row;
     background: lightblue;
+    min-height: 30vh;
+    align-items: center;
   }
 
   .to-the-work {
-    padding: 4em 0em 0em 0em;
+    /* padding: 4em 0em 0em 0em; */
     font-size: 1.25em;
     background: yellowgreen;
   }
 
   .headline-description,
   .spacer {
-    padding: 4em 0em 0em 0em;
+    /* padding: 4em 0em 0em 0em; */
     width: 30vw;
     line-height: 1.6em;
     font-size: 1.25em;
