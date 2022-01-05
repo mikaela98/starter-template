@@ -60,7 +60,6 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
   font-family: var(--main-heading)
 }
 
@@ -134,9 +133,6 @@ p {
   /* Take up the remaining space available */
 }
 
-.portfolio {
-  /* padding: 1rem; */
-}
 
 /* Defining the work page grid for mobile and global */
 .grid {
@@ -264,7 +260,7 @@ p {
 }
 
 .footer-item-1{
-  font-size: 30px;
+  font-size: 55px;
 }
 
 .email-address-link-wrapper {
@@ -293,8 +289,8 @@ p {
   /* Position the tooltip text */
   position: absolute;
   z-index: 1;
-  bottom: 125%;
-  left: 100%;
+  bottom: 105%;
+  left: 105%;
   margin-left: -60px;
 
   /* Fade in tooltip */
@@ -356,9 +352,8 @@ p {
 /*Illustration Gallery*/
 
 .gallery {
-  margin: 10px 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -614,18 +609,6 @@ p {
 @media (min-width: 992px) {
   body {}
 
-  h1 {
-    font-size: 1.7em;
-  }
-
-  h2 {
-    font-size: 3em;
-  }
-
-  h3 {
-    font-size: 1.7em;
-  }
-
 
   .navigation-link {
     padding-top: 0em;
@@ -729,6 +712,16 @@ p {
     justify-content: flex-start;
   }
 
+  .emailaddress{  
+    margin-top: -1.7em;
+    position: relative;
+  }
+
+  .footer-item-1{
+    margin-top: -0.45em;
+    font-size: 70px;
+  }
+
   .footer-item-2 {
     flex-direction: row;
     font-size: 1.25em;
@@ -776,18 +769,55 @@ p {
 
   .about-wrapper {
     flex-direction: row;
-    padding: 6em 12em;
+    padding: 5em 0em 0em 0em;
   }
 
   .about-photo {
-    width: 30%;
+    width: 23%;
     margin-bottom: 0;
   }
 
   .about-bio {
-    width: 48%;
+    width: 50%;
     padding: 3rem;
-    font-size: 1.25em;
+    font-size: 50px;
+    line-height: 1.2em;
+  }
+
+  .emoji {
+    padding-right: 0.2em;
+  }
+
+  .about-bio-grid-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 3em 14em 8em 14em;
+  }
+
+  .about-grid-title{
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    padding-bottom: 0.5em;
+  }
+
+  .about-bio-grid-1{
+    width: 100%;
+    padding-right: 1em;
+    font-size: 18px;
+  }
+
+  .about-bio-grid-2{
+    width: 100%;
+    padding-right: 1em;
+    font-size: 18px;
+  }
+
+  .about-bio-grid-3{
+    width: 100%;
+    padding-right: 1em;
+    font-size: 18px;
   }
 
   .gallery img {
@@ -800,6 +830,7 @@ p {
     font-size: 1.25em;
     justify-content: right;
     background-color: var(--footer-color);
+    padding: 0em 4em 0em 4em;
   }
 
   .top-arrow {
