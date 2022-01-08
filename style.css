@@ -56,7 +56,6 @@ h1 {
   font-size: 1.25em;
   line-height: 1.3em;
   font-family: var(--main-heading);
-  padding-bottom: 0.5em;
 }
 
 h2 {
@@ -160,7 +159,7 @@ p {
   transition: 0.66s ease;
   display: flex;
   justify-content: center;
-  background-image:url('hotel-furniture-couch.jpg');
+  background-image:url('');
 }
 
 .overlay-two {
@@ -442,11 +441,11 @@ p {
 }
 
 .button {
-  font-size: 12px;
   letter-spacing: 0.05rem;
   background-color: var(--background-color);
   border-color: #B98348;
   border-style: solid;
+  border-width: 0.5px;
   color: #B98348;
   padding: 10px 18px;
   margin: 0em .8em .8em 0em;
@@ -463,11 +462,7 @@ p {
 }
 
 .project-title-wrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 2em;
-  font-size: 12px;
+  display: none;
 }
 
 .categories{
@@ -483,7 +478,7 @@ p {
 
 .about-introduction {
   display: flex;
-  padding: 0em 10em 2.5em 0em;
+  padding: 0em 1em 2.5em 1em;
 }
 
 .about-wrapper {
@@ -492,18 +487,59 @@ p {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 1em 4em;
+  padding: 0em 2em 2em 2em;
   flex-direction: column;
 }
 
 .about-photo {
   width: 100%;
+  padding-top: 3.5rem;
   margin-bottom: 2rem;
 }
 
 .about-bio {
   width: 100%;
   text-align: left;
+  font-size: 30px;
+  line-height: normal;
+}
+
+.emoji {
+  padding-right: 0.2em;
+  padding-top: 1em;
+}
+
+.about-bio-grid-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0em 2em 3em 2em;
+}
+
+.about-grid-title{
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  padding-bottom: 0.5em;
+}
+
+.about-bio-grid-1{
+  width: 100%;
+  padding-right: 1em;
+  font-size: 18px;
+}
+
+.about-bio-grid-2{
+  width: 100%;
+  padding-right: 1em;
+  font-size: 18px;
+}
+
+.about-bio-grid-3{
+  width: 100%;
+  padding-right: 1em;
+  font-size: 18px;
+  padding-bottom: 3em;
 }
 
 
@@ -513,14 +549,11 @@ p {
 .project-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 1em 1em 5em 1em;
+  padding: 3em 1em 2em 1em;
 }
 
-.project-title {
-  font-size: 3em;
-}
 
-.project-aside {
+/* .project-aside {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -529,11 +562,59 @@ p {
   min-height: 35vh;
   padding: 1em;
   font-size: 1.1em;
+} */
+
+.project-type{
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  padding-bottom: 0.5em;
 }
 
-.project-type {
-  font-style: italic;
-  padding-bottom: 0.75em;
+/* Tooltip container */
+.projecttitles{  
+  position: relative;
+  font-size: 30px;
+}
+
+/* Tooltip text */
+.projecttitles .tooltiptext2 {
+  visibility: hidden;
+  width: 50px;
+  background-color: #F32F25;
+  color: var(--body-text);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 105%;
+  left: 105%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.projecttitles .tooltiptext2:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #F32F25 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.projecttitles:hover .tooltiptext2 {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* .project-navigation {
@@ -556,21 +637,29 @@ p {
 .next-project-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: right;
-  padding-right: 2em;
-  padding-bottom: 2em;
+  justify-content: space-between;
   text-transform: uppercase;
-  font-size: 1.25em;
+  letter-spacing: 0.05rem;
+  font-size: 18px;
+  padding: 1em 1em 3em 1em;
 }
 
-.next-project {
+.next-project{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+  line-height: 1.5rem;
+}
+
+.previous-project{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
 }
 
 .next-project-arrow {
-  width: 4vw;
-  padding-right: 1em;
+  width: 10vw;
 }
 
 
@@ -746,30 +835,72 @@ p {
 
   .project-wrapper {
     flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5em;
+    padding: 10em 70px 5em 70px;
   }
 
-  .project-aside {
+  .projecttitles{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-type{
+    font-size: 18px;
+  }
+
+  .title{
+    font-size: 80px;
+  }
+
+  .project-bio-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    width: 48vw;
+    padding-right: 3em;
+  }
+
+  /* .project-aside {
     width: 28vw;
     height: 40vh;
     position: -webkit-sticky;
     position: sticky;
     top: 0vh;
     padding: 0em 1em 1em 1em;
-  }
+  } */
 
-  .project-type {
-    font-style: italic;
-    padding-bottom: 0.5em;
-  }
 
   .project-details {
-    width: 70vw;
+    padding: 0em 70px 0em 70px;
   }
 
+  .next-project-wrapper {
+    font-size: 18px;
+    padding: 1em 70px 3em 70px;
+  }
+
+  .next-project{
+    line-height: 2.5rem;
+  }
+  
+  .previous-project{
+    line-height: 2.5rem;
+  }
+
+  .next-project-arrow {
+    width: 4vw;
+  }
+
+  .about-introduction {
+    display: flex;
+    padding: 0em 10em 2.5em 0em;
+  }
 
   .about-wrapper {
     flex-direction: row;
-    padding: 5em 0em 0em 0em;
+    padding:3em 0em 0em 0em;
   }
 
   .about-photo {
@@ -786,38 +917,27 @@ p {
 
   .emoji {
     padding-right: 0.2em;
+    padding-top: 0;
   }
 
   .about-bio-grid-wrapper{
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
     padding: 3em 14em 8em 14em;
   }
 
-  .about-grid-title{
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
-    padding-bottom: 0.5em;
-  }
-
   .about-bio-grid-1{
-    width: 100%;
     padding-right: 1em;
-    font-size: 18px;
   }
 
   .about-bio-grid-2{
-    width: 100%;
     padding-right: 1em;
-    font-size: 18px;
   }
 
   .about-bio-grid-3{
     width: 100%;
     padding-right: 1em;
     font-size: 18px;
+    padding-bottom: 0em;
   }
 
   .gallery img {
