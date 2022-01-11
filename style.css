@@ -515,7 +515,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
-  padding: 0em 2em 3em 2em;
+  padding: 0em 2em 2em 2em;
 }
 
 .about-grid-title{
@@ -540,7 +540,7 @@ p {
   width: 100%;
   padding-right: 1em;
   font-size: 18px;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
 }
 
 
@@ -754,7 +754,7 @@ p {
 .projecttitles .tooltiptext6 {
   visibility: hidden;
   width: 50px;
-  background-color: #9DADAD;
+  background-color: black;
   color: var(--body-text);
   text-align: center;
   padding: 5px 0;
@@ -781,7 +781,7 @@ p {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #9DADAD transparent transparent transparent;
+  border-color: black transparent transparent transparent;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -790,6 +790,51 @@ p {
   opacity: 1;
 }
 
+/* COFFEE */
+.projecttitles{  
+  position: relative;
+  font-size: 30px;
+}
+
+/* Tooltip text */
+.projecttitles .tooltiptext7 {
+  visibility: hidden;
+  width: 50px;
+  background-color: #335260;
+  color: var(--body-text);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 105%;
+  left: 95%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.projecttitles .tooltiptext7:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #335260 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.projecttitles:hover .tooltiptext7 {
+  visibility: visible;
+  opacity: 1;
+}
 
 .arrow {
   padding-right: 1em;
