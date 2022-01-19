@@ -162,80 +162,6 @@ p {
   background-image:url('');
 }
 
-.overlay-two {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 99%;
-  opacity: 0;
-  transition: 0.66s ease;
-  display: flex;
-  justify-content: center;
-  background-image:url('hotel-furniture-couch.jpg');
-}
-
-.overlay-three {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 99%;
-  opacity: 0;
-  transition: 0.66s ease;
-  display: flex;
-  justify-content: center;
-  background-image:url('hotel-furniture-couch.jpg');
-}
-
-.overlay-four {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 99%;
-  opacity: 0;
-  transition: 0.66s ease;
-  display: flex;
-  justify-content: center;
-  background-image:url('hotel-furniture-couch.jpg');
-}
-
-.overlay-five {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 99%;
-  opacity: 0;
-  transition: 0.66s ease;
-  display: flex;
-  justify-content: center;
-  background-image:url('hotel-furniture-couch.jpg');
-}
-
-.overlay-six {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 99%;
-  opacity: 0;
-  transition: 0.66s ease;
-  display: flex;
-  justify-content: center;
-  background-image:url('hotel-furniture-couch.jpg');
-}
 
 /* Solid Colour Overlay */
 
@@ -718,7 +644,7 @@ p {
   position: absolute;
   z-index: 1;
   bottom: 105%;
-  left: 85%;
+  left: 65%;
   margin-left: -60px;
 
   /* Fade in tooltip */
