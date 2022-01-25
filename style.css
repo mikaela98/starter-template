@@ -144,31 +144,98 @@ p {
 
 .project {
   position: relative;
+  max-width: 100%;
   /* Required to contain overlay size */
 }
 
-.overlay-one {
+.project img.roost-image-hover{
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
-  width: 100%;
-  height: 87%;
+  bottom: 0;
+  object-fit: contain;
   opacity: 0;
-  transition: 0.66s ease;
-  display: flex;
-  justify-content: center;
-  background-image:url('');
+  transition: opacity .5s;
 }
 
-
-/* Solid Colour Overlay */
-
-.project:hover .solid,
-.project:active .solid {
+.project:hover img.roost-image-hover{
   opacity: 1;
-  color: #FDFBF7;
+}
+
+.project img.we-image-hover{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.project:hover img.we-image-hover{
+  opacity: 1;
+}
+
+.project img.melinas-image-hover{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.project:hover img.melinas-image-hover{
+  opacity: 1;
+}
+
+.project img.strides-image-hover{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.project:hover img.strides-image-hover{
+  opacity: 1;
+}
+
+.project img.sparks-image-hover{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.project:hover img.sparks-image-hover{
+  opacity: 1;
+}
+
+.project img.bulletproof-image-hover{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.project:hover img.bulletproof-image-hover{
+  opacity: 1;
 }
 
 
@@ -926,7 +993,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 4em;
+    padding-bottom: 4.5em;
     font-size: 18px;
   }
 
